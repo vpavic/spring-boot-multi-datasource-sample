@@ -3,18 +3,3 @@
 This sample application shows how to configure multiple `DataSource` beans in a Spring Boot based application while still using the familiar configuration properties to customize their settings.
 
 The configuration in this sample is based on the approach outlined in the https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto.data-access.configure-two-datasources[_Configure Two DataSources_ section] of Spring Boot's reference manual.
-Here's the exact configuration were using in this sample:
-
-.src/main/java/sample/DataSourceConfiguration.java
-[source,java]
-----
-include::src/main/java/sample/DataSourceConfiguration.java[tag=configuration]
-----
-
-In order to test this configuration, we can use `ApplicationContextRunner` similar to this:
-
-.src/test/java/sample/DataSourceConfigurationTests.java
-[source,java]
-----
-include::src/test/java/sample/DataSourceConfigurationTests.java[tag=configuration-tests]
-----
